@@ -69,7 +69,7 @@ public class Customer
 		}
 		set
 		{
-			this.chargeAccount = value;
+			this.areafeature = value;
 		}
 	}
 }

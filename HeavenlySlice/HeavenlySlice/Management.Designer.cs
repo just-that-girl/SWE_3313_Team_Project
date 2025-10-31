@@ -1,6 +1,6 @@
 ﻿namespace HeavenlySlice
 {
-    partial class Form1
+    partial class Management
     {
         /// <summary>
         /// Required designer variable.
@@ -55,16 +55,24 @@
             this.CustomerManagementGroup = new System.Windows.Forms.GroupBox();
             this.CustomerSearchGroup = new System.Windows.Forms.GroupBox();
             this.PaymentProcessorGroup = new System.Windows.Forms.GroupBox();
-            this.CashButton = new System.Windows.Forms.RadioButton();
-            this.CreditCardButton = new System.Windows.Forms.RadioButton();
-            this.PaymentTitleLabel = new System.Windows.Forms.Label();
-            this.PaymentAmountLabel = new System.Windows.Forms.Label();
-            this.PaymentTitleBox = new System.Windows.Forms.TextBox();
-            this.ProcessPaymentButton = new System.Windows.Forms.Button();
+            this.PhonePaymentBox = new System.Windows.Forms.TextBox();
+            this.PhonePaymentLabel = new System.Windows.Forms.Label();
             this.PaymentAmountBox = new System.Windows.Forms.MaskedTextBox();
+            this.ProcessPaymentButton = new System.Windows.Forms.Button();
+            this.PaymentTitleBox = new System.Windows.Forms.TextBox();
+            this.PaymentAmountLabel = new System.Windows.Forms.Label();
+            this.PaymentTitleLabel = new System.Windows.Forms.Label();
+            this.CreditCardButton = new System.Windows.Forms.RadioButton();
+            this.CashButton = new System.Windows.Forms.RadioButton();
+            this.databaseManagement = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.SaveButton = new System.Windows.Forms.Button();
+            this.LoadButton = new System.Windows.Forms.Button();
             this.CustomerManagementGroup.SuspendLayout();
             this.CustomerSearchGroup.SuspendLayout();
             this.PaymentProcessorGroup.SuspendLayout();
+            this.databaseManagement.SuspendLayout();
             this.SuspendLayout();
             // 
             // NameLabel
@@ -276,6 +284,7 @@
             // 
             // CustomerManagementGroup
             // 
+            this.CustomerManagementGroup.BackColor = System.Drawing.SystemColors.ControlDark;
             this.CustomerManagementGroup.Controls.Add(this.AddressBox);
             this.CustomerManagementGroup.Controls.Add(this.NameLabel);
             this.CustomerManagementGroup.Controls.Add(this.AddressLabel);
@@ -287,7 +296,7 @@
             this.CustomerManagementGroup.Controls.Add(this.ChargeAccountBox);
             this.CustomerManagementGroup.Controls.Add(this.AreaFeatureBox);
             this.CustomerManagementGroup.Controls.Add(this.AddCustomerButton);
-            this.CustomerManagementGroup.Location = new System.Drawing.Point(58, 21);
+            this.CustomerManagementGroup.Location = new System.Drawing.Point(58, 28);
             this.CustomerManagementGroup.Name = "CustomerManagementGroup";
             this.CustomerManagementGroup.Size = new System.Drawing.Size(515, 169);
             this.CustomerManagementGroup.TabIndex = 24;
@@ -296,6 +305,7 @@
             // 
             // CustomerSearchGroup
             // 
+            this.CustomerSearchGroup.BackColor = System.Drawing.SystemColors.ControlDark;
             this.CustomerSearchGroup.Controls.Add(this.PhoneSearchBox);
             this.CustomerSearchGroup.Controls.Add(this.EnterPhoneSearchLabel);
             this.CustomerSearchGroup.Controls.Add(this.AreaFeatureResultLabel);
@@ -314,10 +324,13 @@
             this.CustomerSearchGroup.Size = new System.Drawing.Size(481, 231);
             this.CustomerSearchGroup.TabIndex = 25;
             this.CustomerSearchGroup.TabStop = false;
-            this.CustomerSearchGroup.Text = "Customer Search";
+            this.CustomerSearchGroup.Text = "Customer Search / Payments";
             // 
             // PaymentProcessorGroup
             // 
+            this.PaymentProcessorGroup.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.PaymentProcessorGroup.Controls.Add(this.PhonePaymentBox);
+            this.PaymentProcessorGroup.Controls.Add(this.PhonePaymentLabel);
             this.PaymentProcessorGroup.Controls.Add(this.PaymentAmountBox);
             this.PaymentProcessorGroup.Controls.Add(this.ProcessPaymentButton);
             this.PaymentProcessorGroup.Controls.Add(this.PaymentTitleBox);
@@ -325,12 +338,82 @@
             this.PaymentProcessorGroup.Controls.Add(this.PaymentTitleLabel);
             this.PaymentProcessorGroup.Controls.Add(this.CreditCardButton);
             this.PaymentProcessorGroup.Controls.Add(this.CashButton);
-            this.PaymentProcessorGroup.Location = new System.Drawing.Point(629, 21);
+            this.PaymentProcessorGroup.Location = new System.Drawing.Point(629, 28);
             this.PaymentProcessorGroup.Name = "PaymentProcessorGroup";
             this.PaymentProcessorGroup.Size = new System.Drawing.Size(358, 169);
             this.PaymentProcessorGroup.TabIndex = 26;
             this.PaymentProcessorGroup.TabStop = false;
             this.PaymentProcessorGroup.Text = "Payment Processor";
+            // 
+            // PhonePaymentBox
+            // 
+            this.PhonePaymentBox.Location = new System.Drawing.Point(70, 101);
+            this.PhonePaymentBox.Name = "PhonePaymentBox";
+            this.PhonePaymentBox.Size = new System.Drawing.Size(212, 20);
+            this.PhonePaymentBox.TabIndex = 12;
+            // 
+            // PhonePaymentLabel
+            // 
+            this.PhonePaymentLabel.AutoSize = true;
+            this.PhonePaymentLabel.Location = new System.Drawing.Point(10, 104);
+            this.PhonePaymentLabel.Name = "PhonePaymentLabel";
+            this.PhonePaymentLabel.Size = new System.Drawing.Size(54, 13);
+            this.PhonePaymentLabel.TabIndex = 11;
+            this.PhonePaymentLabel.Text = "Phone #: ";
+            // 
+            // PaymentAmountBox
+            // 
+            this.PaymentAmountBox.AsciiOnly = true;
+            this.PaymentAmountBox.Location = new System.Drawing.Point(65, 67);
+            this.PaymentAmountBox.Mask = "00000.00";
+            this.PaymentAmountBox.Name = "PaymentAmountBox";
+            this.PaymentAmountBox.Size = new System.Drawing.Size(100, 20);
+            this.PaymentAmountBox.TabIndex = 7;
+            // 
+            // ProcessPaymentButton
+            // 
+            this.ProcessPaymentButton.Location = new System.Drawing.Point(13, 135);
+            this.ProcessPaymentButton.Name = "ProcessPaymentButton";
+            this.ProcessPaymentButton.Size = new System.Drawing.Size(114, 23);
+            this.ProcessPaymentButton.TabIndex = 6;
+            this.ProcessPaymentButton.Text = "Process Payment";
+            this.ProcessPaymentButton.UseVisualStyleBackColor = true;
+            this.ProcessPaymentButton.Click += new System.EventHandler(this.ProcessPaymentButton_Click);
+            // 
+            // PaymentTitleBox
+            // 
+            this.PaymentTitleBox.Location = new System.Drawing.Point(91, 19);
+            this.PaymentTitleBox.Name = "PaymentTitleBox";
+            this.PaymentTitleBox.Size = new System.Drawing.Size(212, 20);
+            this.PaymentTitleBox.TabIndex = 4;
+            // 
+            // PaymentAmountLabel
+            // 
+            this.PaymentAmountLabel.AutoSize = true;
+            this.PaymentAmountLabel.Location = new System.Drawing.Point(10, 70);
+            this.PaymentAmountLabel.Name = "PaymentAmountLabel";
+            this.PaymentAmountLabel.Size = new System.Drawing.Size(49, 13);
+            this.PaymentAmountLabel.TabIndex = 3;
+            this.PaymentAmountLabel.Text = "Amount: ";
+            // 
+            // PaymentTitleLabel
+            // 
+            this.PaymentTitleLabel.AutoSize = true;
+            this.PaymentTitleLabel.Location = new System.Drawing.Point(7, 20);
+            this.PaymentTitleLabel.Name = "PaymentTitleLabel";
+            this.PaymentTitleLabel.Size = new System.Drawing.Size(77, 13);
+            this.PaymentTitleLabel.TabIndex = 2;
+            this.PaymentTitleLabel.Text = "Payment Title: ";
+            // 
+            // CreditCardButton
+            // 
+            this.CreditCardButton.AutoSize = true;
+            this.CreditCardButton.Location = new System.Drawing.Point(62, 46);
+            this.CreditCardButton.Name = "CreditCardButton";
+            this.CreditCardButton.Size = new System.Drawing.Size(77, 17);
+            this.CreditCardButton.TabIndex = 1;
+            this.CreditCardButton.Text = "Credit Card";
+            this.CreditCardButton.UseVisualStyleBackColor = true;
             // 
             // CashButton
             // 
@@ -344,69 +427,70 @@
             this.CashButton.Text = "Cash";
             this.CashButton.UseVisualStyleBackColor = true;
             // 
-            // CreditCardButton
+            // databaseManagement
             // 
-            this.CreditCardButton.AutoSize = true;
-            this.CreditCardButton.Location = new System.Drawing.Point(62, 46);
-            this.CreditCardButton.Name = "CreditCardButton";
-            this.CreditCardButton.Size = new System.Drawing.Size(77, 17);
-            this.CreditCardButton.TabIndex = 1;
-            this.CreditCardButton.Text = "Credit Card";
-            this.CreditCardButton.UseVisualStyleBackColor = true;
+            this.databaseManagement.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.databaseManagement.Controls.Add(this.button1);
+            this.databaseManagement.Controls.Add(this.button2);
+            this.databaseManagement.Controls.Add(this.SaveButton);
+            this.databaseManagement.Controls.Add(this.LoadButton);
+            this.databaseManagement.Location = new System.Drawing.Point(629, 354);
+            this.databaseManagement.Name = "databaseManagement";
+            this.databaseManagement.Size = new System.Drawing.Size(265, 90);
+            this.databaseManagement.TabIndex = 27;
+            this.databaseManagement.TabStop = false;
+            this.databaseManagement.Text = "Database Management";
             // 
-            // PaymentTitleLabel
+            // button1
             // 
-            this.PaymentTitleLabel.AutoSize = true;
-            this.PaymentTitleLabel.Location = new System.Drawing.Point(7, 20);
-            this.PaymentTitleLabel.Name = "PaymentTitleLabel";
-            this.PaymentTitleLabel.Size = new System.Drawing.Size(77, 13);
-            this.PaymentTitleLabel.TabIndex = 2;
-            this.PaymentTitleLabel.Text = "Payment Title: ";
+            this.button1.Location = new System.Drawing.Point(133, 49);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(114, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Save Payments";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // PaymentAmountLabel
+            // button2
             // 
-            this.PaymentAmountLabel.AutoSize = true;
-            this.PaymentAmountLabel.Location = new System.Drawing.Point(10, 70);
-            this.PaymentAmountLabel.Name = "PaymentAmountLabel";
-            this.PaymentAmountLabel.Size = new System.Drawing.Size(49, 13);
-            this.PaymentAmountLabel.TabIndex = 3;
-            this.PaymentAmountLabel.Text = "Amount: ";
+            this.button2.Location = new System.Drawing.Point(13, 49);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Load Payments";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // PaymentTitleBox
+            // SaveButton
             // 
-            this.PaymentTitleBox.Location = new System.Drawing.Point(91, 19);
-            this.PaymentTitleBox.Name = "PaymentTitleBox";
-            this.PaymentTitleBox.Size = new System.Drawing.Size(212, 20);
-            this.PaymentTitleBox.TabIndex = 4;
+            this.SaveButton.Location = new System.Drawing.Point(133, 20);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(114, 23);
+            this.SaveButton.TabIndex = 2;
+            this.SaveButton.Text = "Save Customers";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // ProcessPaymentButton
+            // LoadButton
             // 
-            this.ProcessPaymentButton.Location = new System.Drawing.Point(13, 135);
-            this.ProcessPaymentButton.Name = "ProcessPaymentButton";
-            this.ProcessPaymentButton.Size = new System.Drawing.Size(114, 23);
-            this.ProcessPaymentButton.TabIndex = 6;
-            this.ProcessPaymentButton.Text = "Process Payment";
-            this.ProcessPaymentButton.UseVisualStyleBackColor = true;
-            this.ProcessPaymentButton.Click += new System.EventHandler(this.ProcessPaymentButton_Click);
+            this.LoadButton.Location = new System.Drawing.Point(13, 20);
+            this.LoadButton.Name = "LoadButton";
+            this.LoadButton.Size = new System.Drawing.Size(114, 23);
+            this.LoadButton.TabIndex = 0;
+            this.LoadButton.Text = "Load Customers";
+            this.LoadButton.UseVisualStyleBackColor = true;
+            this.LoadButton.Click += new System.EventHandler(this.LoadButton_Click);
             // 
-            // PaymentAmountBox
-            // 
-            this.PaymentAmountBox.AsciiOnly = true;
-            this.PaymentAmountBox.Location = new System.Drawing.Point(65, 67);
-            this.PaymentAmountBox.Mask = "00000.00";
-            this.PaymentAmountBox.Name = "PaymentAmountBox";
-            this.PaymentAmountBox.Size = new System.Drawing.Size(100, 20);
-            this.PaymentAmountBox.TabIndex = 7;
-            // 
-            // Form1
+            // Management
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1199, 466);
+            this.ClientSize = new System.Drawing.Size(1199, 557);
+            this.Controls.Add(this.databaseManagement);
             this.Controls.Add(this.PaymentProcessorGroup);
             this.Controls.Add(this.CustomerSearchGroup);
             this.Controls.Add(this.CustomerManagementGroup);
-            this.Name = "Form1";
+            this.Name = "Management";
             this.Text = "Heavenly Slice";
             this.CustomerManagementGroup.ResumeLayout(false);
             this.CustomerManagementGroup.PerformLayout();
@@ -414,6 +498,7 @@
             this.CustomerSearchGroup.PerformLayout();
             this.PaymentProcessorGroup.ResumeLayout(false);
             this.PaymentProcessorGroup.PerformLayout();
+            this.databaseManagement.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -454,6 +539,13 @@
         private System.Windows.Forms.Label PaymentAmountLabel;
         private System.Windows.Forms.Button ProcessPaymentButton;
         private System.Windows.Forms.MaskedTextBox PaymentAmountBox;
+        private System.Windows.Forms.GroupBox databaseManagement;
+        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button LoadButton;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox PhonePaymentBox;
+        private System.Windows.Forms.Label PhonePaymentLabel;
     }
 }
 

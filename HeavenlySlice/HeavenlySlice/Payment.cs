@@ -5,12 +5,14 @@ public class Payment
 	string paymentTitle;
 	Boolean creditCard;
 	double paymentAmount;
+	string phone;
 
-	public Payment(string pT,Boolean cC,double pA)
+	public Payment(string pT,Boolean cC,double pA,string p)
 	{
 		this.paymentTitle = pT;
 		this.creditCard = cC;
 		this.paymentAmount = pA;
+		this.phone = p;
 	}
 
 	public string PaymentTitle
@@ -34,5 +36,15 @@ public class Payment
 		get{ return this.paymentAmount; }
 		set { this.paymentAmount = value; }
 	}
-
+    public string Phone
+    {
+        get
+        {
+            return this.phone;
+        }
+        set
+        {
+            this.phone = value;
+        }
+    }
 }

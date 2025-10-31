@@ -8,3 +8,17 @@ C:\Users\rgajr\Source\Repos\SWE_3313_Team_Project_main\HeavenlySlice\HeavenlySli
 C:\Users\rgajr\Source\Repos\SWE_3313_Team_Project_main\HeavenlySlice\HeavenlySlice\obj\Debug\HeavenlySlice.csproj.CoreCompileInputs.cache
 C:\Users\rgajr\Source\Repos\SWE_3313_Team_Project_main\HeavenlySlice\HeavenlySlice\obj\Debug\HeavenlySlice.exe
 C:\Users\rgajr\Source\Repos\SWE_3313_Team_Project_main\HeavenlySlice\HeavenlySlice\obj\Debug\HeavenlySlice.pdb
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\bin\Debug\HeavenlySlice.exe.config
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\bin\Debug\HeavenlySlice.exe
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\bin\Debug\HeavenlySlice.pdb
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Debug\HeavenlySlice.csproj.AssemblyReference.cache
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Debug\HeavenlySlice.Properties.Resources.resources
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Debug\HeavenlySlice.csproj.GenerateResource.cache
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Debug\HeavenlySlice.csproj.CoreCompileInputs.cache
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Debug\Heavenly.645983E6.Up2Date
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Debug\HeavenlySlice.exe
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Debug\HeavenlySlice.pdb
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Debug\HeavenlySlice.Management.resources
+C:\Users\rgajr\source\repos\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Debug\HeavenlySlice.OrderMenu.resources
