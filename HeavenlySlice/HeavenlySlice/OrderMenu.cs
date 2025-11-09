@@ -156,10 +156,22 @@ namespace HeavenlySlice
             if (foundNumber)
             {
                 payments.Add(new Payment("Pizza order",payWithCardBox.Checked,total,phoneSubmission.Text));
+
+                var items = new List<Tuple<string, double>>();
+                foreach (ListViewItem item in pizzaList.Items)
+                {
+                    string name = item.Text;
+                    double price = Convert.ToDouble(item.SubItems[1].Text.Replace("$", ""));
+                    items.Add(new Tuple<string, double>(name, price));
+                }
+
+                var receipt = new ReceiptUI("Valued Customer", phoneSubmission.Text, items, total, payWithCardBox.Checked, deliveryButton.Checked);
+                receipt.Show();
+
                 pizzaList.Clear();
                 total = 0;
                 System.IO.File.WriteAllText(@".\paymentdatabase.json", JsonConvert.SerializeObject(payments));
-                MessageBox.Show("Order made!","Confirmation",MessageBoxButtons.OK);
+                MessageBox.Show("Order made!", "Confirmation", MessageBoxButtons.OK);
             }
             else
             {
