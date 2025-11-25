@@ -1,0 +1,15 @@
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\bin\Release\HeavenlySlice.exe.config
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\bin\Release\HeavenlySlice.exe
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\bin\Release\HeavenlySlice.pdb
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\bin\Release\Newtonsoft.Json.dll
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\bin\Release\Newtonsoft.Json.xml
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Release\HeavenlySlice.csproj.AssemblyReference.cache
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Release\HeavenlySlice.Management.resources
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Release\HeavenlySlice.OrderMenu.resources
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Release\HeavenlySlice.Properties.Resources.resources
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Release\HeavenlySlice.ReceiptUI.resources
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Release\HeavenlySlice.csproj.GenerateResource.cache
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Release\HeavenlySlice.csproj.CoreCompileInputs.cache
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Release\Heavenly.645983E6.Up2Date
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Release\HeavenlySlice.exe
+C:\Users\zoeyc\OneDrive - Kennesaw State University\Documents\school\fall 2025\SWE 3313\SWE_3313_Team_Project\HeavenlySlice\HeavenlySlice\obj\Release\HeavenlySlice.pdb

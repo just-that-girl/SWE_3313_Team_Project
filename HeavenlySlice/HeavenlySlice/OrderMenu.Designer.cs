@@ -85,6 +85,16 @@
             this.payWithCardBox = new System.Windows.Forms.CheckBox();
             this.phoneSubmissionLabel = new System.Windows.Forms.Label();
             this.openManagement = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.addUnsweetTeaButton = new System.Windows.Forms.Button();
+            this.addSweetTeaButton = new System.Windows.Forms.Button();
+            this.addFantaButton = new System.Windows.Forms.Button();
+            this.addSpriteButton = new System.Windows.Forms.Button();
+            this.addCokeButton = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.addChocolateButton = new System.Windows.Forms.Button();
+            this.addChipButton = new System.Windows.Forms.Button();
+            this.addOatmealButton = new System.Windows.Forms.Button();
             this.pizzaSizeGroup.SuspendLayout();
             this.pizzaTypeGroup.SuspendLayout();
             this.pizzaCreatorBox.SuspendLayout();
@@ -94,6 +104,8 @@
             this.sauceBox.SuspendLayout();
             this.CustomerManagementGroup.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // pizzaSizeGroup
@@ -103,11 +115,11 @@
             this.pizzaSizeGroup.Controls.Add(this.mediumSize);
             this.pizzaSizeGroup.Controls.Add(this.smallSize);
             this.pizzaSizeGroup.Controls.Add(this.tinySize);
-            this.pizzaSizeGroup.Location = new System.Drawing.Point(17, 28);
-            this.pizzaSizeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pizzaSizeGroup.Location = new System.Drawing.Point(17, 30);
+            this.pizzaSizeGroup.Margin = new System.Windows.Forms.Padding(4);
             this.pizzaSizeGroup.Name = "pizzaSizeGroup";
-            this.pizzaSizeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pizzaSizeGroup.Size = new System.Drawing.Size(163, 165);
+            this.pizzaSizeGroup.Padding = new System.Windows.Forms.Padding(4);
+            this.pizzaSizeGroup.Size = new System.Drawing.Size(172, 165);
             this.pizzaSizeGroup.TabIndex = 0;
             this.pizzaSizeGroup.TabStop = false;
             this.pizzaSizeGroup.Text = "Pizza Size";
@@ -116,7 +128,7 @@
             // 
             this.largeSize.AutoSize = true;
             this.largeSize.Location = new System.Drawing.Point(9, 110);
-            this.largeSize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.largeSize.Margin = new System.Windows.Forms.Padding(4);
             this.largeSize.Name = "largeSize";
             this.largeSize.Size = new System.Drawing.Size(104, 20);
             this.largeSize.TabIndex = 3;
@@ -127,7 +139,7 @@
             // 
             this.mediumSize.AutoSize = true;
             this.mediumSize.Location = new System.Drawing.Point(8, 81);
-            this.mediumSize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mediumSize.Margin = new System.Windows.Forms.Padding(4);
             this.mediumSize.Name = "mediumSize";
             this.mediumSize.Size = new System.Drawing.Size(110, 20);
             this.mediumSize.TabIndex = 2;
@@ -138,7 +150,7 @@
             // 
             this.smallSize.AutoSize = true;
             this.smallSize.Location = new System.Drawing.Point(9, 53);
-            this.smallSize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.smallSize.Margin = new System.Windows.Forms.Padding(4);
             this.smallSize.Name = "smallSize";
             this.smallSize.Size = new System.Drawing.Size(96, 20);
             this.smallSize.TabIndex = 1;
@@ -149,7 +161,7 @@
             // 
             this.tinySize.AutoSize = true;
             this.tinySize.Location = new System.Drawing.Point(9, 25);
-            this.tinySize.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tinySize.Margin = new System.Windows.Forms.Padding(4);
             this.tinySize.Name = "tinySize";
             this.tinySize.Size = new System.Drawing.Size(88, 20);
             this.tinySize.TabIndex = 0;
@@ -164,9 +176,9 @@
             this.pizzaTypeGroup.Controls.Add(this.veggieLovers);
             this.pizzaTypeGroup.Controls.Add(this.meatLovers);
             this.pizzaTypeGroup.Location = new System.Drawing.Point(197, 33);
-            this.pizzaTypeGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pizzaTypeGroup.Margin = new System.Windows.Forms.Padding(4);
             this.pizzaTypeGroup.Name = "pizzaTypeGroup";
-            this.pizzaTypeGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pizzaTypeGroup.Padding = new System.Windows.Forms.Padding(4);
             this.pizzaTypeGroup.Size = new System.Drawing.Size(204, 165);
             this.pizzaTypeGroup.TabIndex = 1;
             this.pizzaTypeGroup.TabStop = false;
@@ -176,7 +188,7 @@
             // 
             this.CYOAPizza.AutoSize = true;
             this.CYOAPizza.Location = new System.Drawing.Point(8, 110);
-            this.CYOAPizza.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CYOAPizza.Margin = new System.Windows.Forms.Padding(4);
             this.CYOAPizza.Name = "CYOAPizza";
             this.CYOAPizza.Size = new System.Drawing.Size(124, 20);
             this.CYOAPizza.TabIndex = 4;
@@ -188,7 +200,7 @@
             // 
             this.cheeseLovers.AutoSize = true;
             this.cheeseLovers.Location = new System.Drawing.Point(8, 81);
-            this.cheeseLovers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cheeseLovers.Margin = new System.Windows.Forms.Padding(4);
             this.cheeseLovers.Name = "cheeseLovers";
             this.cheeseLovers.Size = new System.Drawing.Size(119, 20);
             this.cheeseLovers.TabIndex = 3;
@@ -199,7 +211,7 @@
             // 
             this.veggieLovers.AutoSize = true;
             this.veggieLovers.Location = new System.Drawing.Point(8, 52);
-            this.veggieLovers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.veggieLovers.Margin = new System.Windows.Forms.Padding(4);
             this.veggieLovers.Name = "veggieLovers";
             this.veggieLovers.Size = new System.Drawing.Size(116, 20);
             this.veggieLovers.TabIndex = 2;
@@ -210,7 +222,7 @@
             // 
             this.meatLovers.AutoSize = true;
             this.meatLovers.Location = new System.Drawing.Point(8, 23);
-            this.meatLovers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.meatLovers.Margin = new System.Windows.Forms.Padding(4);
             this.meatLovers.Name = "meatLovers";
             this.meatLovers.Size = new System.Drawing.Size(102, 20);
             this.meatLovers.TabIndex = 1;
@@ -226,10 +238,10 @@
             this.pizzaCreatorBox.Controls.Add(this.sauceBox);
             this.pizzaCreatorBox.Enabled = false;
             this.pizzaCreatorBox.Location = new System.Drawing.Point(17, 201);
-            this.pizzaCreatorBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pizzaCreatorBox.Margin = new System.Windows.Forms.Padding(4);
             this.pizzaCreatorBox.Name = "pizzaCreatorBox";
-            this.pizzaCreatorBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pizzaCreatorBox.Size = new System.Drawing.Size(439, 356);
+            this.pizzaCreatorBox.Padding = new System.Windows.Forms.Padding(4);
+            this.pizzaCreatorBox.Size = new System.Drawing.Size(384, 356);
             this.pizzaCreatorBox.TabIndex = 2;
             this.pizzaCreatorBox.TabStop = false;
             this.pizzaCreatorBox.Text = "Pizza Creator";
@@ -242,10 +254,10 @@
             this.vegetableBox.Controls.Add(this.mushroomsButton);
             this.vegetableBox.Controls.Add(this.onionsButton);
             this.vegetableBox.Location = new System.Drawing.Point(9, 226);
-            this.vegetableBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.vegetableBox.Margin = new System.Windows.Forms.Padding(4);
             this.vegetableBox.Name = "vegetableBox";
-            this.vegetableBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.vegetableBox.Size = new System.Drawing.Size(403, 94);
+            this.vegetableBox.Padding = new System.Windows.Forms.Padding(4);
+            this.vegetableBox.Size = new System.Drawing.Size(356, 94);
             this.vegetableBox.TabIndex = 6;
             this.vegetableBox.TabStop = false;
             this.vegetableBox.Text = "Vegetable";
@@ -254,7 +266,7 @@
             // 
             this.spinachButton.AutoSize = true;
             this.spinachButton.Location = new System.Drawing.Point(124, 53);
-            this.spinachButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.spinachButton.Margin = new System.Windows.Forms.Padding(4);
             this.spinachButton.Name = "spinachButton";
             this.spinachButton.Size = new System.Drawing.Size(78, 20);
             this.spinachButton.TabIndex = 3;
@@ -265,7 +277,7 @@
             // 
             this.peppersButton.AutoSize = true;
             this.peppersButton.Location = new System.Drawing.Point(124, 23);
-            this.peppersButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.peppersButton.Margin = new System.Windows.Forms.Padding(4);
             this.peppersButton.Name = "peppersButton";
             this.peppersButton.Size = new System.Drawing.Size(81, 20);
             this.peppersButton.TabIndex = 2;
@@ -276,7 +288,7 @@
             // 
             this.mushroomsButton.AutoSize = true;
             this.mushroomsButton.Location = new System.Drawing.Point(9, 53);
-            this.mushroomsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mushroomsButton.Margin = new System.Windows.Forms.Padding(4);
             this.mushroomsButton.Name = "mushroomsButton";
             this.mushroomsButton.Size = new System.Drawing.Size(99, 20);
             this.mushroomsButton.TabIndex = 1;
@@ -287,7 +299,7 @@
             // 
             this.onionsButton.AutoSize = true;
             this.onionsButton.Location = new System.Drawing.Point(9, 23);
-            this.onionsButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.onionsButton.Margin = new System.Windows.Forms.Padding(4);
             this.onionsButton.Name = "onionsButton";
             this.onionsButton.Size = new System.Drawing.Size(71, 20);
             this.onionsButton.TabIndex = 0;
@@ -302,10 +314,10 @@
             this.meatBox.Controls.Add(this.baconButton);
             this.meatBox.Controls.Add(this.pepperoniButton);
             this.meatBox.Location = new System.Drawing.Point(9, 126);
-            this.meatBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.meatBox.Margin = new System.Windows.Forms.Padding(4);
             this.meatBox.Name = "meatBox";
-            this.meatBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.meatBox.Size = new System.Drawing.Size(403, 94);
+            this.meatBox.Padding = new System.Windows.Forms.Padding(4);
+            this.meatBox.Size = new System.Drawing.Size(356, 94);
             this.meatBox.TabIndex = 5;
             this.meatBox.TabStop = false;
             this.meatBox.Text = "Meat";
@@ -314,7 +326,7 @@
             // 
             this.chickenButton.AutoSize = true;
             this.chickenButton.Location = new System.Drawing.Point(124, 53);
-            this.chickenButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chickenButton.Margin = new System.Windows.Forms.Padding(4);
             this.chickenButton.Name = "chickenButton";
             this.chickenButton.Size = new System.Drawing.Size(77, 20);
             this.chickenButton.TabIndex = 3;
@@ -325,7 +337,7 @@
             // 
             this.sausageButton.AutoSize = true;
             this.sausageButton.Location = new System.Drawing.Point(124, 23);
-            this.sausageButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sausageButton.Margin = new System.Windows.Forms.Padding(4);
             this.sausageButton.Name = "sausageButton";
             this.sausageButton.Size = new System.Drawing.Size(91, 20);
             this.sausageButton.TabIndex = 2;
@@ -336,7 +348,7 @@
             // 
             this.baconButton.AutoSize = true;
             this.baconButton.Location = new System.Drawing.Point(9, 53);
-            this.baconButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.baconButton.Margin = new System.Windows.Forms.Padding(4);
             this.baconButton.Name = "baconButton";
             this.baconButton.Size = new System.Drawing.Size(68, 20);
             this.baconButton.TabIndex = 1;
@@ -347,7 +359,7 @@
             // 
             this.pepperoniButton.AutoSize = true;
             this.pepperoniButton.Location = new System.Drawing.Point(9, 23);
-            this.pepperoniButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pepperoniButton.Margin = new System.Windows.Forms.Padding(4);
             this.pepperoniButton.Name = "pepperoniButton";
             this.pepperoniButton.Size = new System.Drawing.Size(92, 20);
             this.pepperoniButton.TabIndex = 0;
@@ -361,10 +373,10 @@
             this.cheeseBox.Controls.Add(this.mozarellaButton);
             this.cheeseBox.Controls.Add(this.cheddarButton);
             this.cheeseBox.Location = new System.Drawing.Point(171, 25);
-            this.cheeseBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cheeseBox.Margin = new System.Windows.Forms.Padding(4);
             this.cheeseBox.Name = "cheeseBox";
-            this.cheeseBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.cheeseBox.Size = new System.Drawing.Size(241, 94);
+            this.cheeseBox.Padding = new System.Windows.Forms.Padding(4);
+            this.cheeseBox.Size = new System.Drawing.Size(194, 94);
             this.cheeseBox.TabIndex = 4;
             this.cheeseBox.TabStop = false;
             this.cheeseBox.Text = "Cheese";
@@ -373,7 +385,7 @@
             // 
             this.fetaButton.AutoSize = true;
             this.fetaButton.Location = new System.Drawing.Point(124, 23);
-            this.fetaButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fetaButton.Margin = new System.Windows.Forms.Padding(4);
             this.fetaButton.Name = "fetaButton";
             this.fetaButton.Size = new System.Drawing.Size(56, 20);
             this.fetaButton.TabIndex = 2;
@@ -384,7 +396,7 @@
             // 
             this.mozarellaButton.AutoSize = true;
             this.mozarellaButton.Location = new System.Drawing.Point(9, 53);
-            this.mozarellaButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mozarellaButton.Margin = new System.Windows.Forms.Padding(4);
             this.mozarellaButton.Name = "mozarellaButton";
             this.mozarellaButton.Size = new System.Drawing.Size(88, 20);
             this.mozarellaButton.TabIndex = 1;
@@ -395,7 +407,7 @@
             // 
             this.cheddarButton.AutoSize = true;
             this.cheddarButton.Location = new System.Drawing.Point(9, 23);
-            this.cheddarButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cheddarButton.Margin = new System.Windows.Forms.Padding(4);
             this.cheddarButton.Name = "cheddarButton";
             this.cheddarButton.Size = new System.Drawing.Size(81, 20);
             this.cheddarButton.TabIndex = 0;
@@ -408,9 +420,9 @@
             this.sauceBox.Controls.Add(this.tomatoButton);
             this.sauceBox.Controls.Add(this.alfredoButton);
             this.sauceBox.Location = new System.Drawing.Point(9, 25);
-            this.sauceBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sauceBox.Margin = new System.Windows.Forms.Padding(4);
             this.sauceBox.Name = "sauceBox";
-            this.sauceBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sauceBox.Padding = new System.Windows.Forms.Padding(4);
             this.sauceBox.Size = new System.Drawing.Size(153, 94);
             this.sauceBox.TabIndex = 0;
             this.sauceBox.TabStop = false;
@@ -420,7 +432,7 @@
             // 
             this.tomatoButton.AutoSize = true;
             this.tomatoButton.Location = new System.Drawing.Point(8, 52);
-            this.tomatoButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tomatoButton.Margin = new System.Windows.Forms.Padding(4);
             this.tomatoButton.Name = "tomatoButton";
             this.tomatoButton.Size = new System.Drawing.Size(75, 20);
             this.tomatoButton.TabIndex = 3;
@@ -431,7 +443,7 @@
             // 
             this.alfredoButton.AutoSize = true;
             this.alfredoButton.Location = new System.Drawing.Point(8, 23);
-            this.alfredoButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.alfredoButton.Margin = new System.Windows.Forms.Padding(4);
             this.alfredoButton.Name = "alfredoButton";
             this.alfredoButton.Size = new System.Drawing.Size(71, 20);
             this.alfredoButton.TabIndex = 2;
@@ -445,10 +457,10 @@
             this.pizzaColumn,
             this.priceColumn});
             this.pizzaList.HideSelection = false;
-            this.pizzaList.Location = new System.Drawing.Point(467, 70);
-            this.pizzaList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pizzaList.Location = new System.Drawing.Point(409, 66);
+            this.pizzaList.Margin = new System.Windows.Forms.Padding(4);
             this.pizzaList.Name = "pizzaList";
-            this.pizzaList.Size = new System.Drawing.Size(465, 355);
+            this.pizzaList.Size = new System.Drawing.Size(363, 485);
             this.pizzaList.TabIndex = 3;
             this.pizzaList.UseCompatibleStateImageBehavior = false;
             this.pizzaList.View = System.Windows.Forms.View.Details;
@@ -456,7 +468,7 @@
             // pizzaColumn
             // 
             this.pizzaColumn.Text = "Pizzas in current order";
-            this.pizzaColumn.Width = 250;
+            this.pizzaColumn.Width = 187;
             // 
             // priceColumn
             // 
@@ -465,8 +477,8 @@
             // 
             // addPizzaButton
             // 
-            this.addPizzaButton.Location = new System.Drawing.Point(467, 33);
-            this.addPizzaButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addPizzaButton.Location = new System.Drawing.Point(409, 33);
+            this.addPizzaButton.Margin = new System.Windows.Forms.Padding(4);
             this.addPizzaButton.Name = "addPizzaButton";
             this.addPizzaButton.Size = new System.Drawing.Size(100, 28);
             this.addPizzaButton.TabIndex = 4;
@@ -476,8 +488,8 @@
             // 
             // clearButton
             // 
-            this.clearButton.Location = new System.Drawing.Point(575, 33);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.clearButton.Location = new System.Drawing.Point(517, 33);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(4);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(100, 28);
             this.clearButton.TabIndex = 5;
@@ -488,7 +500,7 @@
             // phoneSubmission
             // 
             this.phoneSubmission.Location = new System.Drawing.Point(84, 23);
-            this.phoneSubmission.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.phoneSubmission.Margin = new System.Windows.Forms.Padding(4);
             this.phoneSubmission.Name = "phoneSubmission";
             this.phoneSubmission.Size = new System.Drawing.Size(179, 22);
             this.phoneSubmission.TabIndex = 6;
@@ -508,10 +520,10 @@
             this.CustomerManagementGroup.Controls.Add(this.AreaFeatureBox);
             this.CustomerManagementGroup.Controls.Add(this.AddCustomerButton);
             this.CustomerManagementGroup.Enabled = false;
-            this.CustomerManagementGroup.Location = new System.Drawing.Point(941, 329);
-            this.CustomerManagementGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustomerManagementGroup.Location = new System.Drawing.Point(1006, 329);
+            this.CustomerManagementGroup.Margin = new System.Windows.Forms.Padding(4);
             this.CustomerManagementGroup.Name = "CustomerManagementGroup";
-            this.CustomerManagementGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustomerManagementGroup.Padding = new System.Windows.Forms.Padding(4);
             this.CustomerManagementGroup.Size = new System.Drawing.Size(537, 228);
             this.CustomerManagementGroup.TabIndex = 25;
             this.CustomerManagementGroup.TabStop = false;
@@ -520,7 +532,7 @@
             // AddressBox
             // 
             this.AddressBox.Location = new System.Drawing.Point(100, 59);
-            this.AddressBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddressBox.Margin = new System.Windows.Forms.Padding(4);
             this.AddressBox.Name = "AddressBox";
             this.AddressBox.Size = new System.Drawing.Size(385, 22);
             this.AddressBox.TabIndex = 6;
@@ -578,7 +590,7 @@
             // NameBox
             // 
             this.NameBox.Location = new System.Drawing.Point(87, 23);
-            this.NameBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NameBox.Margin = new System.Windows.Forms.Padding(4);
             this.NameBox.Name = "NameBox";
             this.NameBox.Size = new System.Drawing.Size(399, 22);
             this.NameBox.TabIndex = 5;
@@ -586,7 +598,7 @@
             // PhoneBox
             // 
             this.PhoneBox.Location = new System.Drawing.Point(87, 91);
-            this.PhoneBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PhoneBox.Margin = new System.Windows.Forms.Padding(4);
             this.PhoneBox.Name = "PhoneBox";
             this.PhoneBox.Size = new System.Drawing.Size(399, 22);
             this.PhoneBox.TabIndex = 7;
@@ -594,7 +606,7 @@
             // ChargeAccountBox
             // 
             this.ChargeAccountBox.Location = new System.Drawing.Point(152, 124);
-            this.ChargeAccountBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ChargeAccountBox.Margin = new System.Windows.Forms.Padding(4);
             this.ChargeAccountBox.Name = "ChargeAccountBox";
             this.ChargeAccountBox.Size = new System.Drawing.Size(333, 22);
             this.ChargeAccountBox.TabIndex = 8;
@@ -602,7 +614,7 @@
             // AreaFeatureBox
             // 
             this.AreaFeatureBox.Location = new System.Drawing.Point(131, 162);
-            this.AreaFeatureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AreaFeatureBox.Margin = new System.Windows.Forms.Padding(4);
             this.AreaFeatureBox.Name = "AreaFeatureBox";
             this.AreaFeatureBox.Size = new System.Drawing.Size(355, 22);
             this.AreaFeatureBox.TabIndex = 9;
@@ -610,7 +622,7 @@
             // AddCustomerButton
             // 
             this.AddCustomerButton.Location = new System.Drawing.Point(387, 194);
-            this.AddCustomerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddCustomerButton.Margin = new System.Windows.Forms.Padding(4);
             this.AddCustomerButton.Name = "AddCustomerButton";
             this.AddCustomerButton.Size = new System.Drawing.Size(143, 28);
             this.AddCustomerButton.TabIndex = 10;
@@ -631,19 +643,20 @@
             this.groupBox1.Controls.Add(this.payWithCardBox);
             this.groupBox1.Controls.Add(this.phoneSubmissionLabel);
             this.groupBox1.Controls.Add(this.phoneSubmission);
-            this.groupBox1.Location = new System.Drawing.Point(467, 433);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Location = new System.Drawing.Point(1006, 197);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(467, 123);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(537, 123);
             this.groupBox1.TabIndex = 26;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Submit Order";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(148, 57);
+            this.label1.Location = new System.Drawing.Point(220, 56);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 16);
@@ -653,8 +666,8 @@
             // digitalSignature
             // 
             this.digitalSignature.Enabled = false;
-            this.digitalSignature.Location = new System.Drawing.Point(272, 53);
-            this.digitalSignature.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.digitalSignature.Location = new System.Drawing.Point(344, 52);
+            this.digitalSignature.Margin = new System.Windows.Forms.Padding(4);
             this.digitalSignature.Name = "digitalSignature";
             this.digitalSignature.Size = new System.Drawing.Size(185, 22);
             this.digitalSignature.TabIndex = 29;
@@ -663,7 +676,7 @@
             // 
             this.totalDue.AutoSize = true;
             this.totalDue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
-            this.totalDue.Location = new System.Drawing.Point(339, 21);
+            this.totalDue.Location = new System.Drawing.Point(472, 23);
             this.totalDue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.totalDue.Name = "totalDue";
             this.totalDue.Size = new System.Drawing.Size(49, 20);
@@ -674,7 +687,7 @@
             // 
             this.totalLabel.AutoSize = true;
             this.totalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F);
-            this.totalLabel.Location = new System.Drawing.Point(272, 17);
+            this.totalLabel.Location = new System.Drawing.Point(405, 19);
             this.totalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.totalLabel.Name = "totalLabel";
             this.totalLabel.Size = new System.Drawing.Size(56, 22);
@@ -685,7 +698,7 @@
             // 
             this.deliveryButton.AutoSize = true;
             this.deliveryButton.Location = new System.Drawing.Point(97, 86);
-            this.deliveryButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deliveryButton.Margin = new System.Windows.Forms.Padding(4);
             this.deliveryButton.Name = "deliveryButton";
             this.deliveryButton.Size = new System.Drawing.Size(78, 20);
             this.deliveryButton.TabIndex = 13;
@@ -697,7 +710,7 @@
             // 
             this.pickupButton.AutoSize = true;
             this.pickupButton.Location = new System.Drawing.Point(12, 86);
-            this.pickupButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pickupButton.Margin = new System.Windows.Forms.Padding(4);
             this.pickupButton.Name = "pickupButton";
             this.pickupButton.Size = new System.Drawing.Size(69, 20);
             this.pickupButton.TabIndex = 12;
@@ -707,8 +720,8 @@
             // 
             // submitOrderButton
             // 
-            this.submitOrderButton.Location = new System.Drawing.Point(316, 86);
-            this.submitOrderButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.submitOrderButton.Location = new System.Drawing.Point(387, 87);
+            this.submitOrderButton.Margin = new System.Windows.Forms.Padding(4);
             this.submitOrderButton.Name = "submitOrderButton";
             this.submitOrderButton.Size = new System.Drawing.Size(143, 28);
             this.submitOrderButton.TabIndex = 11;
@@ -720,7 +733,7 @@
             // 
             this.payWithCardBox.AutoSize = true;
             this.payWithCardBox.Location = new System.Drawing.Point(12, 55);
-            this.payWithCardBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.payWithCardBox.Margin = new System.Windows.Forms.Padding(4);
             this.payWithCardBox.Name = "payWithCardBox";
             this.payWithCardBox.Size = new System.Drawing.Size(115, 20);
             this.payWithCardBox.TabIndex = 8;
@@ -740,8 +753,8 @@
             // 
             // openManagement
             // 
-            this.openManagement.Location = new System.Drawing.Point(1257, 28);
-            this.openManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.openManagement.Location = new System.Drawing.Point(1322, 28);
+            this.openManagement.Margin = new System.Windows.Forms.Padding(4);
             this.openManagement.Name = "openManagement";
             this.openManagement.Size = new System.Drawing.Size(221, 28);
             this.openManagement.TabIndex = 27;
@@ -749,11 +762,134 @@
             this.openManagement.UseVisualStyleBackColor = true;
             this.openManagement.Click += new System.EventHandler(this.openManagement_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.groupBox2.Controls.Add(this.addUnsweetTeaButton);
+            this.groupBox2.Controls.Add(this.addSweetTeaButton);
+            this.groupBox2.Controls.Add(this.addFantaButton);
+            this.groupBox2.Controls.Add(this.addSpriteButton);
+            this.groupBox2.Controls.Add(this.addCokeButton);
+            this.groupBox2.Location = new System.Drawing.Point(780, 33);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(218, 296);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Beverages";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // addUnsweetTeaButton
+            // 
+            this.addUnsweetTeaButton.Location = new System.Drawing.Point(8, 213);
+            this.addUnsweetTeaButton.Name = "addUnsweetTeaButton";
+            this.addUnsweetTeaButton.Size = new System.Drawing.Size(156, 23);
+            this.addUnsweetTeaButton.TabIndex = 4;
+            this.addUnsweetTeaButton.Text = "Add Unsweet Tea";
+            this.addUnsweetTeaButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addUnsweetTeaButton.UseVisualStyleBackColor = true;
+            this.addUnsweetTeaButton.Click += new System.EventHandler(this.addUnsweetTeaButton_Click);
+            // 
+            // addSweetTeaButton
+            // 
+            this.addSweetTeaButton.Location = new System.Drawing.Point(8, 164);
+            this.addSweetTeaButton.Name = "addSweetTeaButton";
+            this.addSweetTeaButton.Size = new System.Drawing.Size(156, 23);
+            this.addSweetTeaButton.TabIndex = 3;
+            this.addSweetTeaButton.Text = "Add Sweet Tea";
+            this.addSweetTeaButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addSweetTeaButton.UseVisualStyleBackColor = true;
+            this.addSweetTeaButton.Click += new System.EventHandler(this.addSweetTeaButton_Click);
+            // 
+            // addFantaButton
+            // 
+            this.addFantaButton.Location = new System.Drawing.Point(8, 120);
+            this.addFantaButton.Name = "addFantaButton";
+            this.addFantaButton.Size = new System.Drawing.Size(156, 23);
+            this.addFantaButton.TabIndex = 2;
+            this.addFantaButton.Text = "Add Fanta";
+            this.addFantaButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addFantaButton.UseVisualStyleBackColor = true;
+            this.addFantaButton.Click += new System.EventHandler(this.addFantaButton_Click);
+            // 
+            // addSpriteButton
+            // 
+            this.addSpriteButton.Location = new System.Drawing.Point(8, 75);
+            this.addSpriteButton.Name = "addSpriteButton";
+            this.addSpriteButton.Size = new System.Drawing.Size(156, 23);
+            this.addSpriteButton.TabIndex = 1;
+            this.addSpriteButton.Text = "Add Sprite";
+            this.addSpriteButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addSpriteButton.UseVisualStyleBackColor = true;
+            this.addSpriteButton.Click += new System.EventHandler(this.addSpriteButton_Click);
+            // 
+            // addCokeButton
+            // 
+            this.addCokeButton.Location = new System.Drawing.Point(8, 33);
+            this.addCokeButton.Name = "addCokeButton";
+            this.addCokeButton.Size = new System.Drawing.Size(156, 23);
+            this.addCokeButton.TabIndex = 0;
+            this.addCokeButton.Text = "Add Coke";
+            this.addCokeButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addCokeButton.UseVisualStyleBackColor = true;
+            this.addCokeButton.Click += new System.EventHandler(this.addCokeButton_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.groupBox3.Controls.Add(this.addChocolateButton);
+            this.groupBox3.Controls.Add(this.addChipButton);
+            this.groupBox3.Controls.Add(this.addOatmealButton);
+            this.groupBox3.Location = new System.Drawing.Point(780, 337);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(218, 214);
+            this.groupBox3.TabIndex = 6;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Cookies";
+            // 
+            // addChocolateButton
+            // 
+            this.addChocolateButton.Location = new System.Drawing.Point(8, 120);
+            this.addChocolateButton.Name = "addChocolateButton";
+            this.addChocolateButton.Size = new System.Drawing.Size(156, 23);
+            this.addChocolateButton.TabIndex = 2;
+            this.addChocolateButton.Text = "Add Chocolate";
+            this.addChocolateButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addChocolateButton.UseVisualStyleBackColor = true;
+            this.addChocolateButton.Click += new System.EventHandler(this.addChocolateButton_Click);
+            // 
+            // addChipButton
+            // 
+            this.addChipButton.Location = new System.Drawing.Point(8, 75);
+            this.addChipButton.Name = "addChipButton";
+            this.addChipButton.Size = new System.Drawing.Size(156, 23);
+            this.addChipButton.TabIndex = 1;
+            this.addChipButton.Text = "Add Chocolate Chip";
+            this.addChipButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addChipButton.UseVisualStyleBackColor = true;
+            this.addChipButton.Click += new System.EventHandler(this.addChipButton_Click);
+            // 
+            // addOatmealButton
+            // 
+            this.addOatmealButton.Location = new System.Drawing.Point(8, 33);
+            this.addOatmealButton.Name = "addOatmealButton";
+            this.addOatmealButton.Size = new System.Drawing.Size(156, 23);
+            this.addOatmealButton.TabIndex = 0;
+            this.addOatmealButton.Text = "Add Oatmeal";
+            this.addOatmealButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.addOatmealButton.UseVisualStyleBackColor = true;
+            this.addOatmealButton.Click += new System.EventHandler(this.addOatmealButton_Click);
+            // 
             // OrderMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1556, 566);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.openManagement);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.CustomerManagementGroup);
@@ -763,7 +899,7 @@
             this.Controls.Add(this.pizzaCreatorBox);
             this.Controls.Add(this.pizzaTypeGroup);
             this.Controls.Add(this.pizzaSizeGroup);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OrderMenu";
             this.Text = "OrderMenu";
             this.pizzaSizeGroup.ResumeLayout(false);
@@ -783,6 +919,8 @@
             this.CustomerManagementGroup.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -846,5 +984,15 @@
         private System.Windows.Forms.TextBox digitalSignature;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button openManagement;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button addUnsweetTeaButton;
+        private System.Windows.Forms.Button addSweetTeaButton;
+        private System.Windows.Forms.Button addFantaButton;
+        private System.Windows.Forms.Button addSpriteButton;
+        private System.Windows.Forms.Button addCokeButton;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button addChocolateButton;
+        private System.Windows.Forms.Button addChipButton;
+        private System.Windows.Forms.Button addOatmealButton;
     }
 }

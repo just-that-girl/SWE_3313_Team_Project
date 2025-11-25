@@ -1,234 +1,189 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace HeavenlySlice
 {
+    /// <summary>
+    /// ReceiptUI form displays the completed order summary, totals, and restaurant details.
+    /// </summary>
     public partial class ReceiptUI : Form
     {
-        private Label PhoneLabel;
-        private Label TotalLabel;
-        private Label PaymentMethodLabel;
-        private Label DeliveryLabel;
-        private Label TimestampLabel;
-        private ListView OrderListView;
-        private ColumnHeader Items;
+        private Label phoneLabel;
+        private Label paymentMethodLabel;
+        private Label deliveryLabel;
+        private ListView receiptList;
+        private Label totalLabel;
+        private Label restaurantDetailsLabel;
+        private ColumnHeader Item;
         private ColumnHeader Price;
-        private BindingSource bindingSource1;
-        private System.ComponentModel.IContainer components;
-        private PictureBox SignatureBox;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private Button PrintButton;
-        private Label label1;
-        private Label CustomerNameLabel;
+        private Label customerNameLabel;
 
-        public ReceiptUI(string customerName, string phone, List<Tuple<string, double>> items, double total, bool paidWithCard, bool isDelivery)
+        /// <summary>
+        /// Initializes a new instance of the ReceiptUI form.
+        /// </summary>
+        /// <param name="customerName">Name of the customer.</param>
+        /// <param name="phone">Phone number of the customer.</param>
+        /// <param name="items">List of ordered items with names and prices.</param>
+        /// <param name="total">Total price of the order.</param>
+        /// <param name="paidWithCard">True if paid with card, false if cash.</param>
+        /// <param name="delivery">True if delivery, false if pickup.</param>
+        public ReceiptUI(string customerName, string phone, List<Tuple<string, double>> items, double total, bool paidWithCard, bool delivery)
         {
             InitializeComponent();
 
-            CustomerNameLabel.Text = $"Customer: {customerName}";
-            PhoneLabel.Text = $"Phone Number: {phone}";
-            TotalLabel.Text = $"Amount Due: ${total:F2}";
-            PaymentMethodLabel.Text = $"Payment Method: {(paidWithCard ? "Credit Card" : "Cash")}";
-            DeliveryLabel.Text = $"Order Type: {(isDelivery ? "Delivery" : "Pickup")}";
-            TimestampLabel.Text = $"Time: {DateTime.Now:f}";
+            // Customer info
+            customerNameLabel.Text = $"Customer: {customerName}";
+            phoneLabel.Text = $"Phone: {phone}";
 
-            OrderListView.View = View.Details;
-            OrderListView.Columns.Add("Item", 200);
-            OrderListView.Columns.Add("Price", 100);
+            // Payment and delivery info
+            paymentMethodLabel.Text = $"Payment: {(paidWithCard ? "Credit Card" : "Cash")}";
+            deliveryLabel.Text = $"Order Type: {(delivery ? "Delivery" : "Pickup")}";
 
+            // Populate items list
             foreach (var item in items)
             {
                 var listItem = new ListViewItem(item.Item1);
                 listItem.SubItems.Add($"${item.Item2:F2}");
-                OrderListView.Items.Add(listItem);
+                receiptList.Items.Add(listItem);
             }
 
-            SignatureBox.Visible = paidWithCard;
-        }
+            // Totals
+            totalLabel.Text = $"Total: ${total:F2}";
 
-        private void PrintButton_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Receipt printed!", "Print", MessageBoxButtons.OK);
+            // Restaurant details
+            restaurantDetailsLabel.Text =
+                "Heavenly Slice\n" +
+                "\n" +
+                "1100 South Marietta Pkwy SE, \n" +
+                "Marietta, GA 30060\n" +
+                "000-000-0000\n" +
+                "HeavenlySlice.com\n" +
+                "Hours: Mon-Thur 9am-11pm, Fri-Sat 11am-12am";
         }
 
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Medium Pizza");
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ReceiptUI));
-            this.CustomerNameLabel = new System.Windows.Forms.Label();
-            this.PhoneLabel = new System.Windows.Forms.Label();
-            this.TotalLabel = new System.Windows.Forms.Label();
-            this.PaymentMethodLabel = new System.Windows.Forms.Label();
-            this.DeliveryLabel = new System.Windows.Forms.Label();
-            this.TimestampLabel = new System.Windows.Forms.Label();
-            this.OrderListView = new System.Windows.Forms.ListView();
-            this.Items = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.customerNameLabel = new System.Windows.Forms.Label();
+            this.phoneLabel = new System.Windows.Forms.Label();
+            this.paymentMethodLabel = new System.Windows.Forms.Label();
+            this.deliveryLabel = new System.Windows.Forms.Label();
+            this.receiptList = new System.Windows.Forms.ListView();
+            this.totalLabel = new System.Windows.Forms.Label();
+            this.restaurantDetailsLabel = new System.Windows.Forms.Label();
+            this.Item = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.SignatureBox = new System.Windows.Forms.PictureBox();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.PrintButton = new System.Windows.Forms.Button();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.SignatureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
-            // CustomerNameLabel
+            // customerNameLabel
             // 
-            this.CustomerNameLabel.AutoSize = true;
-            this.CustomerNameLabel.Location = new System.Drawing.Point(12, 9);
-            this.CustomerNameLabel.Name = "CustomerNameLabel";
-            this.CustomerNameLabel.Size = new System.Drawing.Size(129, 16);
-            this.CustomerNameLabel.TabIndex = 0;
-            this.CustomerNameLabel.Text = "Customer: Jane Doe";
+            this.customerNameLabel.AutoSize = true;
+            this.customerNameLabel.Location = new System.Drawing.Point(13, 13);
+            this.customerNameLabel.Name = "customerNameLabel";
+            this.customerNameLabel.Size = new System.Drawing.Size(104, 16);
+            this.customerNameLabel.TabIndex = 0;
+            this.customerNameLabel.Text = "Customer Name";
+            this.customerNameLabel.Click += new System.EventHandler(this.customerNameLabel_Click);
             // 
-            // PhoneLabel
+            // phoneLabel
             // 
-            this.PhoneLabel.AutoSize = true;
-            this.PhoneLabel.Location = new System.Drawing.Point(12, 34);
-            this.PhoneLabel.Name = "PhoneLabel";
-            this.PhoneLabel.Size = new System.Drawing.Size(181, 16);
-            this.PhoneLabel.TabIndex = 1;
-            this.PhoneLabel.Text = "Phone Number: 123-456-7890";
+            this.phoneLabel.AutoSize = true;
+            this.phoneLabel.Location = new System.Drawing.Point(146, 13);
+            this.phoneLabel.Name = "phoneLabel";
+            this.phoneLabel.Size = new System.Drawing.Size(77, 16);
+            this.phoneLabel.TabIndex = 1;
+            this.phoneLabel.Text = "1234567890";
             // 
-            // TotalLabel
+            // paymentMethodLabel
             // 
-            this.TotalLabel.AutoSize = true;
-            this.TotalLabel.Location = new System.Drawing.Point(12, 65);
-            this.TotalLabel.Name = "TotalLabel";
-            this.TotalLabel.Size = new System.Drawing.Size(117, 16);
-            this.TotalLabel.TabIndex = 2;
-            this.TotalLabel.Text = "Amount Due: $9.99";
-            this.TotalLabel.Click += new System.EventHandler(this.TotalLabel_Click);
+            this.paymentMethodLabel.AutoSize = true;
+            this.paymentMethodLabel.Location = new System.Drawing.Point(13, 43);
+            this.paymentMethodLabel.Name = "paymentMethodLabel";
+            this.paymentMethodLabel.Size = new System.Drawing.Size(77, 16);
+            this.paymentMethodLabel.TabIndex = 2;
+            this.paymentMethodLabel.Text = "Cash / Card";
             // 
-            // PaymentMethodLabel
+            // deliveryLabel
             // 
-            this.PaymentMethodLabel.AutoSize = true;
-            this.PaymentMethodLabel.Location = new System.Drawing.Point(12, 96);
-            this.PaymentMethodLabel.Name = "PaymentMethodLabel";
-            this.PaymentMethodLabel.Size = new System.Drawing.Size(181, 16);
-            this.PaymentMethodLabel.TabIndex = 3;
-            this.PaymentMethodLabel.Text = "Payment Method: Credit Card";
-            this.PaymentMethodLabel.Click += new System.EventHandler(this.PaymentMethodLabel_Click);
+            this.deliveryLabel.AutoSize = true;
+            this.deliveryLabel.Location = new System.Drawing.Point(146, 43);
+            this.deliveryLabel.Name = "deliveryLabel";
+            this.deliveryLabel.Size = new System.Drawing.Size(57, 16);
+            this.deliveryLabel.TabIndex = 3;
+            this.deliveryLabel.Text = "Delivery";
+            this.deliveryLabel.Click += new System.EventHandler(this.label3_Click);
             // 
-            // DeliveryLabel
+            // receiptList
             // 
-            this.DeliveryLabel.AutoSize = true;
-            this.DeliveryLabel.Location = new System.Drawing.Point(12, 130);
-            this.DeliveryLabel.Name = "DeliveryLabel";
-            this.DeliveryLabel.Size = new System.Drawing.Size(132, 16);
-            this.DeliveryLabel.TabIndex = 4;
-            this.DeliveryLabel.Text = "Order Type: Delivery";
-            // 
-            // TimestampLabel
-            // 
-            this.TimestampLabel.AutoSize = true;
-            this.TimestampLabel.Location = new System.Drawing.Point(12, 162);
-            this.TimestampLabel.Name = "TimestampLabel";
-            this.TimestampLabel.Size = new System.Drawing.Size(92, 16);
-            this.TimestampLabel.TabIndex = 5;
-            this.TimestampLabel.Text = "Time: 12:00:00";
-            // 
-            // OrderListView
-            // 
-            this.OrderListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.Items,
+            this.receiptList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Item,
             this.Price});
-            this.OrderListView.HideSelection = false;
-            this.OrderListView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
-            this.OrderListView.Location = new System.Drawing.Point(12, 196);
-            this.OrderListView.Name = "OrderListView";
-            this.OrderListView.Size = new System.Drawing.Size(426, 165);
-            this.OrderListView.TabIndex = 6;
-            this.OrderListView.UseCompatibleStateImageBehavior = false;
-            this.OrderListView.View = System.Windows.Forms.View.Details;
-            this.OrderListView.SelectedIndexChanged += new System.EventHandler(this.OrderListView_SelectedIndexChanged);
+            this.receiptList.FullRowSelect = true;
+            this.receiptList.GridLines = true;
+            this.receiptList.HideSelection = false;
+            this.receiptList.Location = new System.Drawing.Point(12, 74);
+            this.receiptList.Name = "receiptList";
+            this.receiptList.Size = new System.Drawing.Size(304, 168);
+            this.receiptList.TabIndex = 4;
+            this.receiptList.UseCompatibleStateImageBehavior = false;
+            this.receiptList.View = System.Windows.Forms.View.Details;
+            this.receiptList.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
-            // Items
+            // totalLabel
             // 
-            this.Items.Text = "Items";
-            this.Items.Width = 108;
+            this.totalLabel.AutoSize = true;
+            this.totalLabel.Location = new System.Drawing.Point(16, 261);
+            this.totalLabel.Name = "totalLabel";
+            this.totalLabel.Size = new System.Drawing.Size(31, 16);
+            this.totalLabel.TabIndex = 5;
+            this.totalLabel.Text = "0.00";
+            // 
+            // restaurantDetailsLabel
+            // 
+            this.restaurantDetailsLabel.AutoSize = true;
+            this.restaurantDetailsLabel.Location = new System.Drawing.Point(16, 292);
+            this.restaurantDetailsLabel.Name = "restaurantDetailsLabel";
+            this.restaurantDetailsLabel.Size = new System.Drawing.Size(49, 16);
+            this.restaurantDetailsLabel.TabIndex = 6;
+            this.restaurantDetailsLabel.Text = "Details";
+            // 
+            // Item
+            // 
+            this.Item.Text = "Item";
+            this.Item.Width = 200;
             // 
             // Price
             // 
             this.Price.Text = "Price";
-            // 
-            // SignatureBox
-            // 
-            this.SignatureBox.Image = ((System.Drawing.Image)(resources.GetObject("SignatureBox.Image")));
-            this.SignatureBox.Location = new System.Drawing.Point(12, 386);
-            this.SignatureBox.Name = "SignatureBox";
-            this.SignatureBox.Size = new System.Drawing.Size(426, 154);
-            this.SignatureBox.TabIndex = 7;
-            this.SignatureBox.TabStop = false;
-            this.SignatureBox.Visible = false;
-            this.SignatureBox.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // PrintButton
-            // 
-            this.PrintButton.Location = new System.Drawing.Point(12, 703);
-            this.PrintButton.Name = "PrintButton";
-            this.PrintButton.Size = new System.Drawing.Size(114, 33);
-            this.PrintButton.TabIndex = 8;
-            this.PrintButton.Text = "Print";
-            this.PrintButton.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(124, 228);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 16);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "9.99";
+            this.Price.Width = 100;
             // 
             // ReceiptUI
             // 
-            this.ClientSize = new System.Drawing.Size(450, 748);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.PrintButton);
-            this.Controls.Add(this.SignatureBox);
-            this.Controls.Add(this.OrderListView);
-            this.Controls.Add(this.TimestampLabel);
-            this.Controls.Add(this.DeliveryLabel);
-            this.Controls.Add(this.PaymentMethodLabel);
-            this.Controls.Add(this.TotalLabel);
-            this.Controls.Add(this.PhoneLabel);
-            this.Controls.Add(this.CustomerNameLabel);
+            this.ClientSize = new System.Drawing.Size(527, 500);
+            this.Controls.Add(this.restaurantDetailsLabel);
+            this.Controls.Add(this.totalLabel);
+            this.Controls.Add(this.receiptList);
+            this.Controls.Add(this.deliveryLabel);
+            this.Controls.Add(this.paymentMethodLabel);
+            this.Controls.Add(this.phoneLabel);
+            this.Controls.Add(this.customerNameLabel);
             this.Name = "ReceiptUI";
-            this.Load += new System.EventHandler(this.ReceiptUI_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.SignatureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void customerNameLabel_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void ReceiptUI_Load(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void PaymentMethodLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TotalLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void OrderListView_SelectedIndexChanged(object sender, EventArgs e)
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

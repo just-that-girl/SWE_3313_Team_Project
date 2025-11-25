@@ -78,18 +78,20 @@
             // NameLabel
             // 
             this.NameLabel.AutoSize = true;
-            this.NameLabel.Location = new System.Drawing.Point(18, 22);
+            this.NameLabel.Location = new System.Drawing.Point(24, 27);
+            this.NameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(41, 13);
+            this.NameLabel.Size = new System.Drawing.Size(50, 16);
             this.NameLabel.TabIndex = 0;
             this.NameLabel.Text = "Name: ";
             // 
             // AddressLabel
             // 
             this.AddressLabel.AutoSize = true;
-            this.AddressLabel.Location = new System.Drawing.Point(18, 51);
+            this.AddressLabel.Location = new System.Drawing.Point(24, 63);
+            this.AddressLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AddressLabel.Name = "AddressLabel";
-            this.AddressLabel.Size = new System.Drawing.Size(51, 13);
+            this.AddressLabel.Size = new System.Drawing.Size(64, 16);
             this.AddressLabel.TabIndex = 1;
             this.AddressLabel.Text = "Address: ";
             this.AddressLabel.Click += new System.EventHandler(this.label2_Click);
@@ -97,70 +99,79 @@
             // PhoneLabel
             // 
             this.PhoneLabel.AutoSize = true;
-            this.PhoneLabel.Location = new System.Drawing.Point(18, 77);
+            this.PhoneLabel.Location = new System.Drawing.Point(24, 95);
+            this.PhoneLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PhoneLabel.Name = "PhoneLabel";
-            this.PhoneLabel.Size = new System.Drawing.Size(44, 13);
+            this.PhoneLabel.Size = new System.Drawing.Size(52, 16);
             this.PhoneLabel.TabIndex = 2;
             this.PhoneLabel.Text = "Phone: ";
             // 
             // ChargeAccountLabel
             // 
             this.ChargeAccountLabel.AutoSize = true;
-            this.ChargeAccountLabel.Location = new System.Drawing.Point(18, 104);
+            this.ChargeAccountLabel.Location = new System.Drawing.Point(24, 128);
+            this.ChargeAccountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ChargeAccountLabel.Name = "ChargeAccountLabel";
-            this.ChargeAccountLabel.Size = new System.Drawing.Size(90, 13);
+            this.ChargeAccountLabel.Size = new System.Drawing.Size(108, 16);
             this.ChargeAccountLabel.TabIndex = 3;
             this.ChargeAccountLabel.Text = "Charge Account: ";
             // 
             // AreaFeatureLabel
             // 
             this.AreaFeatureLabel.AutoSize = true;
-            this.AreaFeatureLabel.Location = new System.Drawing.Point(18, 135);
+            this.AreaFeatureLabel.Location = new System.Drawing.Point(24, 166);
+            this.AreaFeatureLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AreaFeatureLabel.Name = "AreaFeatureLabel";
-            this.AreaFeatureLabel.Size = new System.Drawing.Size(74, 13);
+            this.AreaFeatureLabel.Size = new System.Drawing.Size(91, 16);
             this.AreaFeatureLabel.TabIndex = 4;
             this.AreaFeatureLabel.Text = "Area Feature: ";
             // 
             // NameBox
             // 
-            this.NameBox.Location = new System.Drawing.Point(65, 19);
+            this.NameBox.Location = new System.Drawing.Point(87, 23);
+            this.NameBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.NameBox.Name = "NameBox";
-            this.NameBox.Size = new System.Drawing.Size(300, 20);
+            this.NameBox.Size = new System.Drawing.Size(399, 22);
             this.NameBox.TabIndex = 5;
             // 
             // AddressBox
             // 
-            this.AddressBox.Location = new System.Drawing.Point(75, 48);
+            this.AddressBox.Location = new System.Drawing.Point(100, 59);
+            this.AddressBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddressBox.Name = "AddressBox";
-            this.AddressBox.Size = new System.Drawing.Size(290, 20);
+            this.AddressBox.Size = new System.Drawing.Size(385, 22);
             this.AddressBox.TabIndex = 6;
             // 
             // PhoneBox
             // 
-            this.PhoneBox.Location = new System.Drawing.Point(65, 74);
+            this.PhoneBox.Location = new System.Drawing.Point(87, 91);
+            this.PhoneBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PhoneBox.Name = "PhoneBox";
-            this.PhoneBox.Size = new System.Drawing.Size(300, 20);
+            this.PhoneBox.Size = new System.Drawing.Size(399, 22);
             this.PhoneBox.TabIndex = 7;
             // 
             // ChargeAccountBox
             // 
-            this.ChargeAccountBox.Location = new System.Drawing.Point(114, 101);
+            this.ChargeAccountBox.Location = new System.Drawing.Point(152, 124);
+            this.ChargeAccountBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ChargeAccountBox.Name = "ChargeAccountBox";
-            this.ChargeAccountBox.Size = new System.Drawing.Size(251, 20);
+            this.ChargeAccountBox.Size = new System.Drawing.Size(333, 22);
             this.ChargeAccountBox.TabIndex = 8;
             // 
             // AreaFeatureBox
             // 
-            this.AreaFeatureBox.Location = new System.Drawing.Point(98, 132);
+            this.AreaFeatureBox.Location = new System.Drawing.Point(131, 162);
+            this.AreaFeatureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AreaFeatureBox.Name = "AreaFeatureBox";
-            this.AreaFeatureBox.Size = new System.Drawing.Size(267, 20);
+            this.AreaFeatureBox.Size = new System.Drawing.Size(355, 22);
             this.AreaFeatureBox.TabIndex = 9;
             // 
             // AddCustomerButton
             // 
-            this.AddCustomerButton.Location = new System.Drawing.Point(371, 132);
+            this.AddCustomerButton.Location = new System.Drawing.Point(495, 162);
+            this.AddCustomerButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddCustomerButton.Name = "AddCustomerButton";
-            this.AddCustomerButton.Size = new System.Drawing.Size(107, 23);
+            this.AddCustomerButton.Size = new System.Drawing.Size(143, 28);
             this.AddCustomerButton.TabIndex = 10;
             this.AddCustomerButton.Text = "Add Customer";
             this.AddCustomerButton.UseVisualStyleBackColor = true;
@@ -169,24 +180,27 @@
             // EnterPhoneSearchLabel
             // 
             this.EnterPhoneSearchLabel.AutoSize = true;
-            this.EnterPhoneSearchLabel.Location = new System.Drawing.Point(11, 37);
+            this.EnterPhoneSearchLabel.Location = new System.Drawing.Point(15, 46);
+            this.EnterPhoneSearchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EnterPhoneSearchLabel.Name = "EnterPhoneSearchLabel";
-            this.EnterPhoneSearchLabel.Size = new System.Drawing.Size(79, 13);
+            this.EnterPhoneSearchLabel.Size = new System.Drawing.Size(93, 16);
             this.EnterPhoneSearchLabel.TabIndex = 11;
             this.EnterPhoneSearchLabel.Text = "Enter Phone #:";
             // 
             // PhoneSearchBox
             // 
-            this.PhoneSearchBox.Location = new System.Drawing.Point(96, 34);
+            this.PhoneSearchBox.Location = new System.Drawing.Point(128, 42);
+            this.PhoneSearchBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PhoneSearchBox.Name = "PhoneSearchBox";
-            this.PhoneSearchBox.Size = new System.Drawing.Size(262, 20);
+            this.PhoneSearchBox.Size = new System.Drawing.Size(348, 22);
             this.PhoneSearchBox.TabIndex = 12;
             // 
             // PhoneSearchButton
             // 
-            this.PhoneSearchButton.Location = new System.Drawing.Point(364, 34);
+            this.PhoneSearchButton.Location = new System.Drawing.Point(485, 42);
+            this.PhoneSearchButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PhoneSearchButton.Name = "PhoneSearchButton";
-            this.PhoneSearchButton.Size = new System.Drawing.Size(107, 23);
+            this.PhoneSearchButton.Size = new System.Drawing.Size(143, 28);
             this.PhoneSearchButton.TabIndex = 13;
             this.PhoneSearchButton.Text = "Search Customer";
             this.PhoneSearchButton.UseVisualStyleBackColor = true;
@@ -195,90 +209,100 @@
             // NameSearchLabel
             // 
             this.NameSearchLabel.AutoSize = true;
-            this.NameSearchLabel.Location = new System.Drawing.Point(11, 77);
+            this.NameSearchLabel.Location = new System.Drawing.Point(15, 95);
+            this.NameSearchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameSearchLabel.Name = "NameSearchLabel";
-            this.NameSearchLabel.Size = new System.Drawing.Size(41, 13);
+            this.NameSearchLabel.Size = new System.Drawing.Size(50, 16);
             this.NameSearchLabel.TabIndex = 14;
             this.NameSearchLabel.Text = "Name: ";
             // 
             // AddressSearchLabel
             // 
             this.AddressSearchLabel.AutoSize = true;
-            this.AddressSearchLabel.Location = new System.Drawing.Point(11, 106);
+            this.AddressSearchLabel.Location = new System.Drawing.Point(15, 130);
+            this.AddressSearchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AddressSearchLabel.Name = "AddressSearchLabel";
-            this.AddressSearchLabel.Size = new System.Drawing.Size(51, 13);
+            this.AddressSearchLabel.Size = new System.Drawing.Size(64, 16);
             this.AddressSearchLabel.TabIndex = 15;
             this.AddressSearchLabel.Text = "Address: ";
             // 
             // PhoneSearchLabel
             // 
             this.PhoneSearchLabel.AutoSize = true;
-            this.PhoneSearchLabel.Location = new System.Drawing.Point(11, 137);
+            this.PhoneSearchLabel.Location = new System.Drawing.Point(15, 169);
+            this.PhoneSearchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PhoneSearchLabel.Name = "PhoneSearchLabel";
-            this.PhoneSearchLabel.Size = new System.Drawing.Size(44, 13);
+            this.PhoneSearchLabel.Size = new System.Drawing.Size(52, 16);
             this.PhoneSearchLabel.TabIndex = 16;
             this.PhoneSearchLabel.Text = "Phone: ";
             // 
             // ChargeAccountSearchLabel
             // 
             this.ChargeAccountSearchLabel.AutoSize = true;
-            this.ChargeAccountSearchLabel.Location = new System.Drawing.Point(11, 167);
+            this.ChargeAccountSearchLabel.Location = new System.Drawing.Point(15, 206);
+            this.ChargeAccountSearchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ChargeAccountSearchLabel.Name = "ChargeAccountSearchLabel";
-            this.ChargeAccountSearchLabel.Size = new System.Drawing.Size(90, 13);
+            this.ChargeAccountSearchLabel.Size = new System.Drawing.Size(108, 16);
             this.ChargeAccountSearchLabel.TabIndex = 17;
             this.ChargeAccountSearchLabel.Text = "Charge Account: ";
             // 
             // AreaFeatureSearchLabel
             // 
             this.AreaFeatureSearchLabel.AutoSize = true;
-            this.AreaFeatureSearchLabel.Location = new System.Drawing.Point(11, 197);
+            this.AreaFeatureSearchLabel.Location = new System.Drawing.Point(15, 242);
+            this.AreaFeatureSearchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AreaFeatureSearchLabel.Name = "AreaFeatureSearchLabel";
-            this.AreaFeatureSearchLabel.Size = new System.Drawing.Size(74, 13);
+            this.AreaFeatureSearchLabel.Size = new System.Drawing.Size(91, 16);
             this.AreaFeatureSearchLabel.TabIndex = 18;
             this.AreaFeatureSearchLabel.Text = "Area Feature: ";
             // 
             // NameResultLabel
             // 
             this.NameResultLabel.AutoSize = true;
-            this.NameResultLabel.Location = new System.Drawing.Point(65, 77);
+            this.NameResultLabel.Location = new System.Drawing.Point(87, 95);
+            this.NameResultLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameResultLabel.Name = "NameResultLabel";
-            this.NameResultLabel.Size = new System.Drawing.Size(49, 13);
+            this.NameResultLabel.Size = new System.Drawing.Size(56, 16);
             this.NameResultLabel.TabIndex = 19;
             this.NameResultLabel.Text = "_______";
             // 
             // AddressResultLabel
             // 
             this.AddressResultLabel.AutoSize = true;
-            this.AddressResultLabel.Location = new System.Drawing.Point(65, 106);
+            this.AddressResultLabel.Location = new System.Drawing.Point(87, 130);
+            this.AddressResultLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AddressResultLabel.Name = "AddressResultLabel";
-            this.AddressResultLabel.Size = new System.Drawing.Size(49, 13);
+            this.AddressResultLabel.Size = new System.Drawing.Size(56, 16);
             this.AddressResultLabel.TabIndex = 20;
             this.AddressResultLabel.Text = "_______";
             // 
             // PhoneResultLabel
             // 
             this.PhoneResultLabel.AutoSize = true;
-            this.PhoneResultLabel.Location = new System.Drawing.Point(65, 137);
+            this.PhoneResultLabel.Location = new System.Drawing.Point(87, 169);
+            this.PhoneResultLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PhoneResultLabel.Name = "PhoneResultLabel";
-            this.PhoneResultLabel.Size = new System.Drawing.Size(49, 13);
+            this.PhoneResultLabel.Size = new System.Drawing.Size(56, 16);
             this.PhoneResultLabel.TabIndex = 21;
             this.PhoneResultLabel.Text = "_______";
             // 
             // ChargeAccountResultLabel
             // 
             this.ChargeAccountResultLabel.AutoSize = true;
-            this.ChargeAccountResultLabel.Location = new System.Drawing.Point(107, 167);
+            this.ChargeAccountResultLabel.Location = new System.Drawing.Point(143, 206);
+            this.ChargeAccountResultLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ChargeAccountResultLabel.Name = "ChargeAccountResultLabel";
-            this.ChargeAccountResultLabel.Size = new System.Drawing.Size(49, 13);
+            this.ChargeAccountResultLabel.Size = new System.Drawing.Size(56, 16);
             this.ChargeAccountResultLabel.TabIndex = 22;
             this.ChargeAccountResultLabel.Text = "_______";
             // 
             // AreaFeatureResultLabel
             // 
             this.AreaFeatureResultLabel.AutoSize = true;
-            this.AreaFeatureResultLabel.Location = new System.Drawing.Point(107, 197);
+            this.AreaFeatureResultLabel.Location = new System.Drawing.Point(143, 242);
+            this.AreaFeatureResultLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AreaFeatureResultLabel.Name = "AreaFeatureResultLabel";
-            this.AreaFeatureResultLabel.Size = new System.Drawing.Size(49, 13);
+            this.AreaFeatureResultLabel.Size = new System.Drawing.Size(56, 16);
             this.AreaFeatureResultLabel.TabIndex = 23;
             this.AreaFeatureResultLabel.Text = "_______";
             // 
@@ -296,9 +320,11 @@
             this.CustomerManagementGroup.Controls.Add(this.ChargeAccountBox);
             this.CustomerManagementGroup.Controls.Add(this.AreaFeatureBox);
             this.CustomerManagementGroup.Controls.Add(this.AddCustomerButton);
-            this.CustomerManagementGroup.Location = new System.Drawing.Point(58, 28);
+            this.CustomerManagementGroup.Location = new System.Drawing.Point(77, 34);
+            this.CustomerManagementGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CustomerManagementGroup.Name = "CustomerManagementGroup";
-            this.CustomerManagementGroup.Size = new System.Drawing.Size(515, 169);
+            this.CustomerManagementGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustomerManagementGroup.Size = new System.Drawing.Size(655, 208);
             this.CustomerManagementGroup.TabIndex = 24;
             this.CustomerManagementGroup.TabStop = false;
             this.CustomerManagementGroup.Text = "Customer Management";
@@ -319,9 +345,11 @@
             this.CustomerSearchGroup.Controls.Add(this.NameResultLabel);
             this.CustomerSearchGroup.Controls.Add(this.ChargeAccountSearchLabel);
             this.CustomerSearchGroup.Controls.Add(this.AreaFeatureSearchLabel);
-            this.CustomerSearchGroup.Location = new System.Drawing.Point(58, 213);
+            this.CustomerSearchGroup.Location = new System.Drawing.Point(77, 262);
+            this.CustomerSearchGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CustomerSearchGroup.Name = "CustomerSearchGroup";
-            this.CustomerSearchGroup.Size = new System.Drawing.Size(481, 231);
+            this.CustomerSearchGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CustomerSearchGroup.Size = new System.Drawing.Size(641, 284);
             this.CustomerSearchGroup.TabIndex = 25;
             this.CustomerSearchGroup.TabStop = false;
             this.CustomerSearchGroup.Text = "Customer Search / Payments";
@@ -338,43 +366,49 @@
             this.PaymentProcessorGroup.Controls.Add(this.PaymentTitleLabel);
             this.PaymentProcessorGroup.Controls.Add(this.CreditCardButton);
             this.PaymentProcessorGroup.Controls.Add(this.CashButton);
-            this.PaymentProcessorGroup.Location = new System.Drawing.Point(629, 28);
+            this.PaymentProcessorGroup.Location = new System.Drawing.Point(802, 34);
+            this.PaymentProcessorGroup.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaymentProcessorGroup.Name = "PaymentProcessorGroup";
-            this.PaymentProcessorGroup.Size = new System.Drawing.Size(358, 169);
+            this.PaymentProcessorGroup.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PaymentProcessorGroup.Size = new System.Drawing.Size(477, 208);
             this.PaymentProcessorGroup.TabIndex = 26;
             this.PaymentProcessorGroup.TabStop = false;
             this.PaymentProcessorGroup.Text = "Payment Processor";
             // 
             // PhonePaymentBox
             // 
-            this.PhonePaymentBox.Location = new System.Drawing.Point(70, 101);
+            this.PhonePaymentBox.Location = new System.Drawing.Point(93, 124);
+            this.PhonePaymentBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PhonePaymentBox.Name = "PhonePaymentBox";
-            this.PhonePaymentBox.Size = new System.Drawing.Size(212, 20);
+            this.PhonePaymentBox.Size = new System.Drawing.Size(281, 22);
             this.PhonePaymentBox.TabIndex = 12;
             // 
             // PhonePaymentLabel
             // 
             this.PhonePaymentLabel.AutoSize = true;
-            this.PhonePaymentLabel.Location = new System.Drawing.Point(10, 104);
+            this.PhonePaymentLabel.Location = new System.Drawing.Point(13, 128);
+            this.PhonePaymentLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PhonePaymentLabel.Name = "PhonePaymentLabel";
-            this.PhonePaymentLabel.Size = new System.Drawing.Size(54, 13);
+            this.PhonePaymentLabel.Size = new System.Drawing.Size(62, 16);
             this.PhonePaymentLabel.TabIndex = 11;
             this.PhonePaymentLabel.Text = "Phone #: ";
             // 
             // PaymentAmountBox
             // 
             this.PaymentAmountBox.AsciiOnly = true;
-            this.PaymentAmountBox.Location = new System.Drawing.Point(65, 67);
+            this.PaymentAmountBox.Location = new System.Drawing.Point(87, 82);
+            this.PaymentAmountBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaymentAmountBox.Mask = "00000.00";
             this.PaymentAmountBox.Name = "PaymentAmountBox";
-            this.PaymentAmountBox.Size = new System.Drawing.Size(100, 20);
+            this.PaymentAmountBox.Size = new System.Drawing.Size(132, 22);
             this.PaymentAmountBox.TabIndex = 7;
             // 
             // ProcessPaymentButton
             // 
-            this.ProcessPaymentButton.Location = new System.Drawing.Point(13, 135);
+            this.ProcessPaymentButton.Location = new System.Drawing.Point(17, 166);
+            this.ProcessPaymentButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ProcessPaymentButton.Name = "ProcessPaymentButton";
-            this.ProcessPaymentButton.Size = new System.Drawing.Size(114, 23);
+            this.ProcessPaymentButton.Size = new System.Drawing.Size(152, 28);
             this.ProcessPaymentButton.TabIndex = 6;
             this.ProcessPaymentButton.Text = "Process Payment";
             this.ProcessPaymentButton.UseVisualStyleBackColor = true;
@@ -382,35 +416,39 @@
             // 
             // PaymentTitleBox
             // 
-            this.PaymentTitleBox.Location = new System.Drawing.Point(91, 19);
+            this.PaymentTitleBox.Location = new System.Drawing.Point(121, 23);
+            this.PaymentTitleBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PaymentTitleBox.Name = "PaymentTitleBox";
-            this.PaymentTitleBox.Size = new System.Drawing.Size(212, 20);
+            this.PaymentTitleBox.Size = new System.Drawing.Size(281, 22);
             this.PaymentTitleBox.TabIndex = 4;
             // 
             // PaymentAmountLabel
             // 
             this.PaymentAmountLabel.AutoSize = true;
-            this.PaymentAmountLabel.Location = new System.Drawing.Point(10, 70);
+            this.PaymentAmountLabel.Location = new System.Drawing.Point(13, 86);
+            this.PaymentAmountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PaymentAmountLabel.Name = "PaymentAmountLabel";
-            this.PaymentAmountLabel.Size = new System.Drawing.Size(49, 13);
+            this.PaymentAmountLabel.Size = new System.Drawing.Size(58, 16);
             this.PaymentAmountLabel.TabIndex = 3;
             this.PaymentAmountLabel.Text = "Amount: ";
             // 
             // PaymentTitleLabel
             // 
             this.PaymentTitleLabel.AutoSize = true;
-            this.PaymentTitleLabel.Location = new System.Drawing.Point(7, 20);
+            this.PaymentTitleLabel.Location = new System.Drawing.Point(9, 25);
+            this.PaymentTitleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PaymentTitleLabel.Name = "PaymentTitleLabel";
-            this.PaymentTitleLabel.Size = new System.Drawing.Size(77, 13);
+            this.PaymentTitleLabel.Size = new System.Drawing.Size(95, 16);
             this.PaymentTitleLabel.TabIndex = 2;
             this.PaymentTitleLabel.Text = "Payment Title: ";
             // 
             // CreditCardButton
             // 
             this.CreditCardButton.AutoSize = true;
-            this.CreditCardButton.Location = new System.Drawing.Point(62, 46);
+            this.CreditCardButton.Location = new System.Drawing.Point(83, 57);
+            this.CreditCardButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CreditCardButton.Name = "CreditCardButton";
-            this.CreditCardButton.Size = new System.Drawing.Size(77, 17);
+            this.CreditCardButton.Size = new System.Drawing.Size(95, 20);
             this.CreditCardButton.TabIndex = 1;
             this.CreditCardButton.Text = "Credit Card";
             this.CreditCardButton.UseVisualStyleBackColor = true;
@@ -419,9 +457,10 @@
             // 
             this.CashButton.AutoSize = true;
             this.CashButton.Checked = true;
-            this.CashButton.Location = new System.Drawing.Point(7, 46);
+            this.CashButton.Location = new System.Drawing.Point(9, 57);
+            this.CashButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CashButton.Name = "CashButton";
-            this.CashButton.Size = new System.Drawing.Size(49, 17);
+            this.CashButton.Size = new System.Drawing.Size(59, 20);
             this.CashButton.TabIndex = 0;
             this.CashButton.TabStop = true;
             this.CashButton.Text = "Cash";
@@ -434,18 +473,21 @@
             this.databaseManagement.Controls.Add(this.button2);
             this.databaseManagement.Controls.Add(this.SaveButton);
             this.databaseManagement.Controls.Add(this.LoadButton);
-            this.databaseManagement.Location = new System.Drawing.Point(629, 354);
+            this.databaseManagement.Location = new System.Drawing.Point(839, 436);
+            this.databaseManagement.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.databaseManagement.Name = "databaseManagement";
-            this.databaseManagement.Size = new System.Drawing.Size(265, 90);
+            this.databaseManagement.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.databaseManagement.Size = new System.Drawing.Size(353, 111);
             this.databaseManagement.TabIndex = 27;
             this.databaseManagement.TabStop = false;
             this.databaseManagement.Text = "Database Management";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(133, 49);
+            this.button1.Location = new System.Drawing.Point(177, 60);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 23);
+            this.button1.Size = new System.Drawing.Size(152, 28);
             this.button1.TabIndex = 4;
             this.button1.Text = "Save Payments";
             this.button1.UseVisualStyleBackColor = true;
@@ -453,9 +495,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(13, 49);
+            this.button2.Location = new System.Drawing.Point(17, 60);
+            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 23);
+            this.button2.Size = new System.Drawing.Size(152, 28);
             this.button2.TabIndex = 3;
             this.button2.Text = "Load Payments";
             this.button2.UseVisualStyleBackColor = true;
@@ -463,9 +506,10 @@
             // 
             // SaveButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(133, 20);
+            this.SaveButton.Location = new System.Drawing.Point(177, 25);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(114, 23);
+            this.SaveButton.Size = new System.Drawing.Size(152, 28);
             this.SaveButton.TabIndex = 2;
             this.SaveButton.Text = "Save Customers";
             this.SaveButton.UseVisualStyleBackColor = true;
@@ -473,9 +517,10 @@
             // 
             // LoadButton
             // 
-            this.LoadButton.Location = new System.Drawing.Point(13, 20);
+            this.LoadButton.Location = new System.Drawing.Point(17, 25);
+            this.LoadButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LoadButton.Name = "LoadButton";
-            this.LoadButton.Size = new System.Drawing.Size(114, 23);
+            this.LoadButton.Size = new System.Drawing.Size(152, 28);
             this.LoadButton.TabIndex = 0;
             this.LoadButton.Text = "Load Customers";
             this.LoadButton.UseVisualStyleBackColor = true;
@@ -483,13 +528,14 @@
             // 
             // Management
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1199, 557);
+            this.ClientSize = new System.Drawing.Size(1599, 686);
             this.Controls.Add(this.databaseManagement);
             this.Controls.Add(this.PaymentProcessorGroup);
             this.Controls.Add(this.CustomerSearchGroup);
             this.Controls.Add(this.CustomerManagementGroup);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Management";
             this.Text = "Heavenly Slice";
             this.CustomerManagementGroup.ResumeLayout(false);

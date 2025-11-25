@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\projects\\SWE_3313_Team_Project\\",
+  "WorkspaceRootPath": "C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\school\\fall 2025\\SWE 3313\\SWE_3313_Team_Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\projects\\SWE_3313_Team_Project\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\school\\fall 2025\\SWE 3313\\SWE_3313_Team_Project\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\projects\\SWE_3313_Team_Project\\test_file||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\school\\fall 2025\\SWE 3313\\SWE_3313_Team_Project\\test_file||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:test_file||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -18,28 +18,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "test_file",
-              "DocumentMoniker": "C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\projects\\SWE_3313_Team_Project\\test_file",
+              "DocumentMoniker": "C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\school\\fall 2025\\SWE 3313\\SWE_3313_Team_Project\\test_file",
               "RelativeDocumentMoniker": "test_file",
-              "ToolTip": "C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\projects\\SWE_3313_Team_Project\\test_file",
+              "ToolTip": "C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\school\\fall 2025\\SWE 3313\\SWE_3313_Team_Project\\test_file",
               "RelativeToolTip": "test_file",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-04T04:55:40.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-04T04:55:40.444Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\projects\\SWE_3313_Team_Project\\README.md",
+              "DocumentMoniker": "C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\school\\fall 2025\\SWE 3313\\SWE_3313_Team_Project\\README.md",
               "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\projects\\SWE_3313_Team_Project\\README.md",
+              "ToolTip": "C:\\Users\\zoeyc\\OneDrive - Kennesaw State University\\Documents\\school\\fall 2025\\SWE 3313\\SWE_3313_Team_Project\\README.md",
               "RelativeToolTip": "README.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",

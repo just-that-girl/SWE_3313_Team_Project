@@ -1,1 +1,30 @@
-[]
+[
+    {
+        "Name": "Adam Brown",
+        "Address": "101 Maple Hollow",
+        "Phone": "1111111111",
+        "ChargeAccount": "Cash",
+        "AreaFeature": "near river"
+    },
+    {
+        "Name": "Cindy Dirk",
+        "Address": "202 Oak Ridge",
+        "Phone": "2222222222",
+        "ChargeAccount": "Cash",
+        "AreaFeature": "apartment"
+    },
+    {
+        "Name": "Eddie Franklin",
+        "Address": "303 Pine Crest",
+        "Phone": "3333333333",
+        "ChargeAccount": "Card",
+        "AreaFeature": "gated"
+    },
+    {
+        "Name": "Giselle Hamilton",
+        "Address": "404 Birch Grove",
+        "Phone": "4444444444",
+        "ChargeAccount": "Card",
+        "AreaFeature": "townhome"
+    }
+]

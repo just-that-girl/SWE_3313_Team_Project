@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "PaymentTitle": "Pizza order",
+        "CreditCard": false,
+        "PaymentAmount": 28.339999999999996,
+        "Phone": "1111111111"
+    },
+    {
+        "PaymentTitle": "Pizza order",
+        "CreditCard": false,
+        "PaymentAmount": 16.41,
+        "Phone": "2222222222"
+    },
+    {
+        "PaymentTitle": "Pizza order",
+        "CreditCard": true,
+        "PaymentAmount": 16.41,
+        "Phone": "3333333333"
+    }
+]
