@@ -38,7 +38,8 @@
               "RelativeToolTip": "test_file",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-04T04:55:40.444Z"
+              "WhenOpened": "2025-10-04T04:55:40.444Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
